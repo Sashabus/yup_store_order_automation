@@ -8,15 +8,19 @@
 </head>
 <body>
     <div class="container">
+        <div class="user-info">
+            <input type="email" id="fortnite-email" placeholder="Fortnite Email" required>
+            <input type="password" id="fortnite-password" placeholder="Fortnite Password" required>
+            <input type="text" id="discord-username" placeholder="Discord Username" required>
+        </div>
         <div id="basket-items">
-            <!-- Items will be dynamically loaded here by JavaScript -->
+            <!-- Product items will be loaded here by JavaScript -->
         </div>
         <div class="total-price">
             Total Price: <span id="total-price">0</span> UAH
         </div>
-        <button type="button" id="checkout-button">Checkout</button>
+        <button type="button" id="checkout-button" disabled>Checkout</button>
     </div>
-
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
